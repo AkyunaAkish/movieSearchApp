@@ -1,2 +1,28 @@
 *, *:before, *:after {
   box-sizing: border-box; }
+
+  .searchTable{
+    border-bottom: 1px solid black;
+    height: 200px;
+    text-align: center;
+  }
+  .searchButton{
+    background: rgb(37,120,196);
+    border-radius: 12%;
+    color:white;
+    border: none;
+  }
+  .searchButton{
+    a{
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .searchResultTable{
+    border: 1px solid rgb(234,232,234);
+    float: left;
+    margin-top: 1%;
+    margin-left: 13.5%;
+    color: rgb(120,166,214);
+
+  }

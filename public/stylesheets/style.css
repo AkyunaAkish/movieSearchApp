@@ -1,5 +1,24 @@
 *, *:before, *:after {
   box-sizing: border-box; }
-body{
-  background:blue;
-}
+
+.searchTable {
+  border-bottom: 1px solid black;
+  height: 200px;
+  text-align: center; }
+
+.searchButton {
+  background: #2578c4;
+  border-radius: 12%;
+  color: white;
+  border: none; }
+
+.searchButton a {
+  text-decoration: none;
+  color: white; }
+
+.searchResultTable {
+  border: 1px solid #eae8ea;
+  float: left;
+  margin-top: 1%;
+  margin-left: 13.5%;
+  color: #78a6d6; }

@@ -9,17 +9,45 @@
   <base href="/">
   <title>Movie Search</title>
 </head>
-<body>
+<body ng-controller="SearchController">
+  <table style="width:100%" class="searchTable">
+    <tr>
+      <td><h1>Angular OMDb API Search</h1></td>
+    </tr>
+    <tr>
+      <td><h5>Enter a movie by the title.</h5></td>
+    </tr>
+    <tr>
+      <form name="myForm" novalidate>
+        <td><input type="text" placeholder="Search" ng-model="title" required></td>
+
+
+      </tr>
+      <tr>
+        <td><button class="searchButton" ng-click="search(title)">Search! <i class="fa fa-arrow-right"></i></button></td>
+      </tr>
+    </form>
+  </table>
   <div id="angView" ng-view></div>
 
+  <table style="width:30%" class="searchResultTable" ng-repeat="movie in movies.data.Search">
+    <tr class="resultTr">
+      <td><h4>{{movie.Title}}</h4></td>
+    </tr>
+    <tr class="resultTr">
+      <td><h5>{{movie.Year}}</h5></td>
+    </tr>
+  </table>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.js"></script>
-<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="/ang.js"></script>
-<script src="/controllers.js"></script>
-<script src="/routes.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-animate.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="/ang.js"></script>
+  <script src="/controllers.js"></script>
+  <script src="/routes.js"></script>
 </body>
 </html>
