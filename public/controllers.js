@@ -3,7 +3,7 @@ app.controller('SearchController', function($scope, $http, $routeParams){
 
   $scope.search = function(title){
     $scope.movies = '';
-    $http.get('http://www.omdbapi.com/?s=' + title).
+    $http.get('https://www.omdbapi.com/?s=' + title).
     then(function(response) {
       console.log(response);
       $scope.movies = response;
