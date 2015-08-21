@@ -1,10 +1,7 @@
 
 app.controller('SearchController', function($scope, $http, $routeParams){
 
-
-
-
-    $http.get('https://www.omdbapi.com/?s=' + $routeParams.search).
+$http.get('https://www.omdbapi.com/?s=' + $routeParams.search).
     then(function(response) {
       console.log(response);
       $scope.movies = response;
