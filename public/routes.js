@@ -1,7 +1,7 @@
 app.config(function($routeProvider, $locationProvider) {
 
   $routeProvider
-  .when('/', {
+  .when('/:search', {
     templateUrl: 'partials/home.html',
     controller: 'SearchController'
   }).when('/movies/:id', {
