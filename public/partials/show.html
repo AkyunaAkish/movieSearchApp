@@ -1,1 +1,55 @@
-<h2>{{message}}</h2>
+<table style="width:40%" class="singleSearchResultTable">
+  <thead>
+    <tr class="singleResultTr">
+      <th id="singleResultTitle"><h1>{{oneMovie.data.Title}}</h1></th>
+    </tr>
+  </thead>
+  <tr class="singleResultTr">
+    <td class="singleImageTd"><img ng-src="{{oneMovie.data.Poster}}" class="singleResultImg"alt="No Image Available"></td>
+    <td style="display:block;max-width:900px;word-wrap:break-word;" id="infoId"><h5 class="greyText">Starring: {{oneMovie.data.Actors}}</h5><br>
+      <h5>{{oneMovie.data.Plot}}</h5><br>
+      <h3>Additional Details</h3><br>
+      <h5><b>Awards</b>: {{oneMovie.data.Awards}}</h5><br>
+      <h5><b>Country</b>: {{oneMovie.data.Country}}</h5><br>
+      <h5><b>Director</b>: {{oneMovie.data.Director}}</h5><br>
+      <h5><b>Genre</b>: {{oneMovie.data.Genre}}</h5><br>
+      <h5><b>Language</b>: {{oneMovie.data.Language}}</h5><br>
+      <h5><b>Metascore</b>: {{oneMovie.data.Metascore}}</h5><br>
+      <h5><b>Rated</b>: {{oneMovie.data.Rated}}</h5><br>
+      <h5><b>Released</b>: {{oneMovie.data.Released}}</h5><br>
+      <h5><b>Runtime</b>: {{oneMovie.data.Runtime}}</h5><br>
+      <h5><b>Writer</b>: {{oneMovie.data.Writer}}</h5><br>
+      <h5><b>Year</b>: {{oneMovie.data.Year}}</h5><br>
+      <h5><b>Imdb Rating</b>: {{oneMovie.data.imdbRating}}</h5><br>
+      <h5><b>Imdb Votes</b>: {{oneMovie.data.imdbVotes}}</h5>
+    </td>
+    <!--     <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5>{{oneMovie.data.Plot}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h3>Additional Details</h3></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Awards</b>: {{oneMovie.data.Awards}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Country</b>: {{oneMovie.data.Country}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Director</b>: {{oneMovie.data.Director}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Genre</b>: {{oneMovie.data.Genre}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Language</b>: {{oneMovie.data.Language}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Metascore</b>: {{oneMovie.data.Metascore}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Rated</b>: {{oneMovie.data.Rated}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Released</b>: {{oneMovie.data.Released}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Runtime</b>: {{oneMovie.data.Runtime}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Writer</b>: {{oneMovie.data.Writer}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Year</b>: {{oneMovie.data.Year}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Imdb Rating</b>: {{oneMovie.data.imdbRating}}</h5></td>
+    <td class="singleResultTd" style="display:block;max-width:400px;word-wrap:break-word;"><h5><b>Imdb Votes</b>: {{oneMovie.data.imdbVotes}}</h5></td> -->
+
+  </tr>
+
+</table>
+
+<!-- <table style="width:20%" class="singleSearchResultTable">
+
+<tr class="singleResultTr" id="singleResultTitle">
+<td><h1>{{oneMovie.data.Title}}</h1></td>
+</tr>
+
+<tr class="singleResultTr" id="singResultActors">
+<td><h5>{{oneMovie.data.Actors}}</h5></td>
+</tr>
+</table> -->

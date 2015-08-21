@@ -26,3 +26,38 @@
     color: rgb(120,166,214);
 
   }
+  .singleSearchResultTable{
+    margin: 0 auto;
+    /*   margin-top: 1%; */
+    /* border: 1px solid rgb(240,238,240); */
+  }
+  #singleResultTitle{
+    text-align: center;
+    /* padding-left:40%; */
+  }
+  .singleResultImg{
+
+    height: 390px;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    /* padding-top:-105%; */
+    /*   margin-bottom:260%; */
+  }
+  table{
+    overflow: scroll;
+  }
+  table td{
+    min-width: 150px;
+  }
+  .singleImageTd{
+    padding-bottom:450%;
+  }
+
+  .greyText{
+    color: rgb(153,151,153);
+  }
+  /*   .singleResultTd{
+  height:auto;
+  width:50%;
+} */

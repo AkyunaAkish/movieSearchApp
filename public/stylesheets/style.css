@@ -22,3 +22,36 @@
   margin-top: 1%;
   margin-left: 13.5%;
   color: #78a6d6; }
+
+.singleSearchResultTable {
+  margin: 0 auto;
+  /*   margin-top: 1%; */
+  /* border: 1px solid rgb(240,238,240); */ }
+
+#singleResultTitle {
+  text-align: center;
+  /* padding-left:40%; */ }
+
+.singleResultImg {
+  height: 390px;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* padding-top:-105%; */
+  /*   margin-bottom:260%; */ }
+
+table {
+  overflow: scroll; }
+
+table td {
+  min-width: 150px; }
+
+.singleImageTd {
+  padding-bottom: 450%; }
+
+.greyText {
+  color: #999799; }
+
+/*   .singleResultTd{
+  height:auto;
+  width:50%;
+} */

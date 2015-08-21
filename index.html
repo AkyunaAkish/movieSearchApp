@@ -9,10 +9,10 @@
   <base href="/">
   <title>Movie Search</title>
 </head>
-<body ng-controller="SearchController">
+<body ng-controller="SearchController" ng-cloak>
   <table style="width:100%" class="searchTable">
     <tr>
-      <td><h1>Angular OMDb API Search</h1></td>
+      <td style="display:inline;clear:both;" ><h1>Angular OMDb API Search</h1></td>
     </tr>
     <tr>
       <td><h5>Enter a movie by the title.</h5></td>
@@ -30,14 +30,6 @@
   </table>
   <div id="angView" ng-view></div>
 
-  <table style="width:30%" class="searchResultTable" ng-repeat="movie in movies.data.Search">
-    <tr class="resultTr">
-      <td><h4>{{movie.Title}}</h4></td>
-    </tr>
-    <tr class="resultTr">
-      <td><h5>{{movie.Year}}</h5></td>
-    </tr>
-  </table>
 
 
 

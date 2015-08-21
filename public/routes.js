@@ -4,14 +4,10 @@ app.config(function($routeProvider, $locationProvider) {
   .when('/', {
     templateUrl: 'partials/home.html',
     controller: 'SearchController'
-  })
-  .when('/searchResult', {
-    templateUrl: 'partials/searchResult.html',
-    controller: 'SearchController'
-  }).when('/show', {
+  }).when('/movies/:id', {
     templateUrl: 'partials/show.html',
-    controller: 'SearchController'
-  }).otherwise({redirectTo:"/"});
+    controller: 'ShowMovieController'
+  })
 
 // use the HTML5 History API
   $locationProvider.html5Mode(true);

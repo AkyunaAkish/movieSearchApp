@@ -1,1 +1,8 @@
-
+<table style="width:30%" class="searchResultTable" ng-repeat="movie in movies.data.Search">
+  <tr class="resultTr">
+    <td><a ng-href="/movies/{{movie.imdbID}}"><h4>{{movie.Title}}</h4></a></td>
+  </tr>
+  <tr class="resultTr">
+    <td><h5>{{movie.Year}}</h5></td>
+  </tr>
+</table>
