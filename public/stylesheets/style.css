@@ -51,6 +51,10 @@ table td {
 .greyText {
   color: #999799; }
 
+img, embed, object, video {
+  max-width: 100%;
+  height: auto; }
+
 /*   .singleResultTd{
   height:auto;
   width:50%;
